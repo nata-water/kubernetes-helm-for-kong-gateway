@@ -1,0 +1,21 @@
+ingressController:
+  # CustomResourceDefinition: https://kubernetes.io/ja/docs/concepts/extend-kubernetes/api-extension/custom-resources/
+  installCRDs: false
+
+env:
+  database: "postgres"
+  # データベースのIPアドレスもしくはホスト名を指定する
+  pg_host: "YOUR_IP_ADDRESS OR HOSTNAME"
+  pg_port: "5432"
+  pg_database: "kong"
+  pg_user: "kong"
+  pg_password: "postgres"
+
+
+# auth:
+#   password: postgres
+
+admin:
+  enabled: true
+  http:
+    enabled: true
